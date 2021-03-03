@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo-netflix.png" alt="">
+            </div>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+        
+    <main class="carousel-filmes-main">
+        <div class="filme-principal-1 carousel-main carousel__item--visible">
+            <div class="container ">
+                <h3 class="titulo">
+                    HOUSE OF CARDS
+                </h3>
+                <p class="titulo-info"> 
+                    Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.
+                </p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao" onclick="trailer_1()">
+                        <i class="fas fa-info-circle"></i>
+                        TRAILER
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="filme-principal-2 carousel-main carousel__item--hidden">
+            <div class="container ">
+                <h3 class="titulo">
+                    A Teoria De Tudo
+                </h3>
+                <p class="titulo-info"> 
+                    Baseado na biografia de Stephen Hawking, o filme mostra a vida do aclamado astrofísico: as descobertas profissionais, o relacionamento familiar e doença degenerativa.
+                </p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao" onclick="trailer_2()">
+                        <i class="fas fa-info-circle"></i>
+                        TRAILER
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="filme-principal-3 carousel-main carousel__item--hidden">
+            <div class="container ">
+                <h3 class="titulo">
+                    Passageiros
+                </h3>
+                <p class="titulo-info"> 
+                    Uma nave espacial tem um problema de funcionamento em suas câmaras do sono. Como resultado, dois passageiros são despertados 90 anos antes.
+                </p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao" onclick="trailer_3()" >
+                        <i class="fas fa-info-circle"></i>
+                        TRAILER
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel__actions">
+            <button id="carousel-main__button--prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+            <button id="carousel-main__button--next"  aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+     
+    <div class="carousel">
+        <div class="minha-lista">
+            <h2>
+                Minha Lista
+            </h2>
+            <i class="fas fa-angle-right"></i>
+        </div>
+        <div class="container">
+            <div class="carousel-filmes">
+                <div class="item carousel__item carousel__item--visible">
+                    <img class="box-filme" src="img/mini1.jpg" alt="">
+                </div>
+                <div class="item carousel__item carousel__item--visible">
+                    <img class="box-filme" src="img/mini2.jpg" alt="">
+                </div>
+                <div class="item carousel__item carousel__item--visible">
+                    <img class="box-filme" src="img/mini3.jpg" alt="">
+                </div>
+                <div class="item carousel__item carousel__item--visible">
+                    <img class="box-filme" src="img/mini4.jpg" alt="">
+                </div>
+                <div class="item carousel__item carousel__item--visible">
+                    <img class="box-filme" src="img/mini5.jpg" alt="">
+                </div>
+                <div class="item carousel__item carousel__item--hidden" >
+                    <img class="box-filme" src="img/mini6.jpg" alt="">
+                </div>
+                <div class="item carousel__item carousel__item--hidden">
+                    <img class="box-filme" src="img/mini7.jpg" alt="">
+                </div>
+                <div class="item carousel__item carousel__item--hidden">
+                    <img class="box-filme" src="img/mini8.jpg" alt="">
+                </div>
+                <div class="item carousel__item carousel__item--hidden">
+                    <img class="box-filme" src="img/mini9.jpg" alt="">
+                </div>
+                <div class="item carousel__item carousel__item--hidden">
+                    <img class="box-filme" src="img/mini10.jpg" alt="">
+                </div>
+            </div>
+            <div class="carousel__actions">
+                <button id="carousel__button--prev" class="carousel-button carousel__button--hidden " aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+                <button id="carousel__button--next" class="carousel-button carousel__button--visible "  aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--script icon-->
+    <script src="https://kit.fontawesome.com/ac0dacb5a0.js" crossorigin="anonymous"></script>
+
+    <!--script -->
+    <script src="js/carrossel-mini.js"></script>
+    <script src="js/carrossel-main.js"></script>
+    <script src="js/links.js"></script>
+</body>
+</html>
